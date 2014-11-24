@@ -44,3 +44,34 @@ Render to
     </tr>
 </table>
 ```
+
+###Render table with 12 rows
+
+```javascript
+{tag: "table", html: function(){
+    var res = [];
+
+    for (var i = 0; i < 12; i++){
+        res.push({tag: "tr", html: {tag: "td", html: i}});
+    }
+    return res;
+}}
+```
+Render to
+
+```html
+<table>
+    <tr><td>1</td></tr>
+    <tr><td>2</td></tr>
+    <tr><td>3</td></tr>
+    <tr><td>4</td></tr>
+    <tr><td>5</td></tr>
+    <tr><td>6</td></tr>
+    <tr><td>7</td></tr>
+    <tr><td>8</td></tr>
+    <tr><td>9</td></tr>
+    <tr><td>10</td></tr>
+    <tr><td>11</td></tr>
+    <tr><td>12</td></tr>
+</table>
+```
