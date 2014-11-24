@@ -1,4 +1,6 @@
 JSON-Template-Engine
 ====================
 
-create html from JSON objects
+Create html from JSON objects
+====================
+
